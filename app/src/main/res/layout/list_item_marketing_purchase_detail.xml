@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_underline_selector"
+    android:minHeight="48dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/purch_detail_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_msg_remind" />
+
+    <TextView
+        android:id="@+id/purch_detail__title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/purch_detail_icon"
+        android:text="物品aaa"
+        android:textColor="@color/text_color_title"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/time_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="剩余：100件"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_small" />
+
+
+    <TextView
+        android:id="@+id/time_below"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purch_detail__title"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/purch_detail_icon"
+        android:text="单价 500"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_small" />
+
+</RelativeLayout>

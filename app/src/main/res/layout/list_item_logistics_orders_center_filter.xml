@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_underline_selector"
+    android:minHeight="48dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp">
+
+    <RadioButton
+        android:id="@+id/radio"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/filter_name"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/radio"
+        android:layout_marginLeft="8dp"
+        android:text="过滤内容~"
+        android:layout_toEndOf="@id/radio"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_normal" />
+
+</RelativeLayout>

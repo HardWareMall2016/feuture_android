@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择物品"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="aaa物品"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/selected_goods_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/text_size_large"/>
+            </RelativeLayout>
+
+            <SeekBar
+                android:id="@+id/goods_seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="1个"
+                    android:textColor="@color/text_color_content"
+                    android:textSize="@dimen/text_size_normal"/>
+
+                <TextView
+                    android:id="@+id/goods_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="1"
+                    android:textColor="@color/text_color_content"
+                    android:textSize="@dimen/text_size_normal"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/store_trade_order_company_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指定接单公司"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/store_trade_order_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:drawableEnd="@drawable/arrow_right"
+                android:drawableRight="@drawable/arrow_right"
+                android:text="选择接单公司"
+                android:textColor="@color/sub_color1"
+                android:textSize="@dimen/text_size_normal"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/trade_order_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:minHeight="@dimen/min_item_height"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单类型"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/trade_order_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:drawableEnd="@drawable/arrow_right"
+                android:drawableRight="@drawable/arrow_right"
+                android:text="请选择订单类型"
+                android:textColor="@color/sub_color1"
+                android:textSize="@dimen/text_size_normal"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:minHeight="@dimen/min_item_height"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="订单金额"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/trade_order_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/store_trade_order_money"
+                android:layout_weight="2"
+                android:background="@null"
+                android:hint="请输入订单金额"
+                android:inputType="number"
+                android:textColor="@color/sub_color1"
+                android:textColorHint="#999999"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="违约金"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_liquidated_damage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@null"
+                android:hint="请输入违约金"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/sub_color1"
+                android:textColorHint="@color/sub_color1"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/overdue_time_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="逾期时间"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/tv_overdue_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="请选择逾期时间"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

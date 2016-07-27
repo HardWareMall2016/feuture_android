@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/route_manage_detail_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F4F4F4"
+                    android:padding="10dp"
+                    android:text="线路详情" />
+
+                <com.zhan.ironfuture.ui.widget.MyListView
+                    android:id="@+id/route_manage_detail_line_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/route_manage_detail_car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/route_manage_detail_line"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F4F4F4"
+                    android:padding="10dp"
+                    android:text="车辆详情" />
+
+                <com.zhan.ironfuture.ui.widget.MyListView
+                    android:id="@+id/route_manage_detail_car_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/route_manage_detail_bootm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F59E34"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/detail_car_buycar_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+</RelativeLayout>

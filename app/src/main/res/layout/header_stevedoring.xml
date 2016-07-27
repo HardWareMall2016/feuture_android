@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/default_bg"
+        android:scaleType="center"
+        android:src="@drawable/arrow_left_small" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/loading_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_color3_underline"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="装货"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/unloading_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="卸货"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large" />
+
+    </LinearLayout>
+
+</RelativeLayout>

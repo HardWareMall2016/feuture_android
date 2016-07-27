@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="8dp">
+
+    <RelativeLayout
+        android:id="@+id/order_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_underline_selector"
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/order_num_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="订单号"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/order_num_title"
+            android:text="875851265686568"
+            android:textColor="@color/text_color_content"
+            android:textSize="@dimen/text_size_normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right" />
+
+    </RelativeLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_title"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/order_title"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="商品4种 总计 ￥500"
+        android:textColor="@color/text_color_supplementary"
+        android:textSize="@dimen/text_size_normal" />
+</RelativeLayout>

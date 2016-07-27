@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/total_construct_expend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_small"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:paddingLeft="8dp"
+            android:text="建设路线共花费:"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+        <HorizontalScrollView
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/route"
+                android:layout_width="wrap_content"
+                android:layout_height="108dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_content"
+        android:background="#CCCCCC"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_half_circle_selector"
+            android:gravity="center"
+            android:hint="搜索"
+            android:minHeight="40dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textColor="@color/sub_color3"
+            android:textColorHint="@color/text_color_content"
+            android:textSize="@dimen/text_size_large"/>
+
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/bg_search_selector"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_content"
+        android:orientation="vertical">
+
+        <!--<com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+            android:id="@+id/pull_refresh_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dip"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="?attr/selectableItemBackground"
+            android:smoothScrollbar="true" />-->
+        <com.zhan.ironfuture.ui.widget.PinnedHeaderExpandableListView
+            android:id="@+id/company_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dip"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="?attr/selectableItemBackground"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+    <com.zhan.ironfuture.ui.widget.SideBar
+        android:id="@+id/staff_list_sidrbar"
+        android:layout_width="20.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/search_content"
+        android:layout_gravity="right|center"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="50dp" />
+
+    <include
+        android:id="@id/layoutLoading"
+        layout="@layout/comm_lay_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@id/layoutLoadFailed"
+        layout="@layout/comm_lay_loadfailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@id/layoutEmpty"
+        layout="@layout/comm_lay_emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!--<ImageView
+        android:id="@id/layoutEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:scaleType="center"
+        android:src="@drawable/no_course"
+        android:visibility="gone" />-->
+</RelativeLayout>

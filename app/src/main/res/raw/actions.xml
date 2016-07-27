@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app-settings>
+	<!--必选项-->
+	<setting type="base_url">
+		<des>基本服务地址</des>
+		<value>http://www.feutureonline.com:8080/tiewl/</value>
+		<!--<value>http://172.18.0.51:8080/tiewl/</value>-->
+	</setting>
+
+	<!--可选项-->
+	<setting type="special_url">
+		<des>特殊请求服务器地址</des>
+		<value>http://192.168.41.60:8073/Teacher/</value>
+	</setting>
+
+	<!--可选项-->
+	<setting type="check_update_url">
+		<des>升级地址</des>
+		<value>http://192.168.41.60:8073/update.json</value>
+	</setting>
+
+	<!--可选项-->
+	<setting type="http_request_framework">
+		<des>Http请求框架volley/android-async-http</des>
+		<value>volley</value>
+	</setting>
+
+</app-settings>

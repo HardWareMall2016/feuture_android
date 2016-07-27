@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_white_rounded"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="精炼完成"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large" />
+
+        <ListView
+            android:id="@+id/end_goods_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="20dp"
+            android:cacheColorHint="#00000000"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="?attr/selectableItemBackground"
+            android:smoothScrollbar="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/divider" />
+
+    <TextView
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_btn_bottom_white_rounded_selector"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="确定"
+        android:textColor="@color/sub_color1"
+        android:textSize="@dimen/text_size_large" />
+</LinearLayout>

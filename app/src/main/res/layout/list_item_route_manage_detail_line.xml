@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/detail_line_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第1站"
+        android:textSize="@dimen/text_size_normal"
+       />
+
+    <TextView
+        android:id="@+id/detail_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="A公司"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/text_color_content"/>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle_image="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_underline_selector"
+    android:minHeight="48dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <com.zhan.framework.ui.widget.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher"
+        circle_image:border_width="0dp" />
+
+    <TextView
+        android:id="@+id/transfer_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/img"
+        android:text="公司A"
+        android:textColor="@color/text_color_title"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/transfer_company_contury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transfer_company_name"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/img"
+        android:text="来自国家:中国"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_small" />
+
+
+    <TextView
+        android:id="@+id/transfer_company_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:text="2015-10-29 12:10"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_small" />
+
+</RelativeLayout>

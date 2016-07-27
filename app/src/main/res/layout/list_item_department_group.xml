@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="?android:attr/listDivider"
+    android:orientation="vertical"
+    android:showDividers="middle|end">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_selector"
+        android:minHeight="48dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right_small" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/arrow"
+            android:text="部门"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color_content"
+            android:textSize="@dimen/text_size_small" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ext_turnon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/turnon_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/sub_color1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ext_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/budget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/default_bg"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="部门预算"
+            android:textColor="@color/sub_color1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="20dp"
+            android:background="@color/sub_color4" />
+
+        <TextView
+            android:id="@+id/invite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/default_bg"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="邀请"
+            android:textColor="#4E73CE"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="20dp"
+            android:background="@color/sub_color4" />
+
+        <TextView
+            android:id="@+id/publish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/default_bg"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="发布职位"
+            android:textColor="#4E73CE"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+</LinearLayout>

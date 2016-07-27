@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle_image="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_underline_selector"
+    android:paddingBottom="4dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp">
+
+    <com.zhan.framework.ui.widget.CircleImageView
+        android:id="@+id/user_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher"
+        circle_image:border_width="0dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/user_img"
+        android:text="乔峰"
+        android:textColor="@color/text_color_title"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/user_img"
+        android:text="UI设计师"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/expect_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/job"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/job"
+        android:text="10k-15k"
+        android:textColor="@color/sub_color5"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/job"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/user_img"
+        android:text="洛阳UI设计学院"
+        android:textColor="@color/text_color_supplementary"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_sub_color4_rounded_selector"
+        android:paddingBottom="4dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="4dp"
+        android:text="+ 邀请"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal" />
+
+</RelativeLayout>

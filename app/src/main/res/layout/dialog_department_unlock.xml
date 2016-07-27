@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_white_rounded"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="解锁部门"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/divider" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:divider="?android:attr/listDivider"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/default_bg"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="取消"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/divider" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/default_bg"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="确定"
+            android:textColor="@color/sub_color1"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+
+</LinearLayout>

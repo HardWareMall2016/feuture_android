@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_store_purchase_order_change_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一级原料"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+    <com.zhan.ironfuture.ui.widget.MyGridView
+        android:id="@+id/store_change_gridView_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:horizontalSpacing="16dp"
+        android:numColumns="4"
+        android:scrollbarStyle="outsideOverlay"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="16dp"
+        android:visibility="gone"
+        android:background="#F4F4F4"
+        android:padding="10dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_store_purchase_order_change_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二级原料"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+        <com.zhan.ironfuture.ui.widget.MyGridView
+            android:id="@+id/store_change_gridView_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:horizontalSpacing="16dp"
+            android:numColumns="4"
+            android:scrollbarStyle="outsideOverlay"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="16dp"
+            android:visibility="gone"
+            android:background="#F4F4F4"
+            android:padding="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_store_purchase_order_change_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+        <com.zhan.ironfuture.ui.widget.MyGridView
+            android:id="@+id/store_change_gridView_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:horizontalSpacing="16dp"
+            android:numColumns="4"
+            android:scrollbarStyle="outsideOverlay"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="16dp"
+            android:visibility="gone"
+            android:background="#F4F4F4"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_underline_selector"
+    android:paddingBottom="8dp">
+
+    <RelativeLayout
+        android:id="@+id/product_line_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/product_line_goods_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="#1"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/product_line_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/product_line_goods_title"
+            android:text="产线"
+            android:textColor="@color/text_color_content"
+            android:textSize="@dimen/text_size_normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_line_title"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="正在生产"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal" />
+            <TextView
+                android:id="@+id/goods_line_recipe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="配方一"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="距离下次可修改"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal" />
+            <TextView
+                android:id="@+id/goods_line_next_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="24时32分12秒"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/goods"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="燃料：50%"
+        android:textColor="@color/text_color_supplementary"
+        android:textSize="@dimen/text_size_normal"
+        android:visibility="gone"/>
+</RelativeLayout>

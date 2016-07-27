@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单号"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/stevedoring_detail_ordernum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textColor="@color/text_color_supplementary"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单金额"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/stevedoring_detail_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textColor="@color/text_color_supplementary"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="逾期时间"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/stevedoring_detail_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textColor="@color/text_color_supplementary"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="违约金"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/stevedoring_detail_outdata_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textColor="@color/text_color_supplementary"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/stevedoring_detail_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11111"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_stevedoring_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="?attr/selectableItemBackground"
+        android:smoothScrollbar="true"
+        />
+
+</LinearLayout>

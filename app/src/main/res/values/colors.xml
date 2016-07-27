@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 标题文本颜色 -->
+    <color name="text_color_title">#333333</color>
+    <!-- 内容文本颜色 -->
+    <color name="text_color_content">#9390A5</color>
+    <!-- 补充文本颜色 -->
+    <color name="text_color_supplementary">#999999</color>
+    <!-- 分割线颜色 -->
+    <color name="divider_color">#dddddd</color>
+
+    <!-- 主要文本颜色 -->
+    <color name="text_color_main">#6a6a6a</color>
+
+    <!-- 按钮pressed颜色 -->
+    <color name="pressed_dark_color">#eeeeee</color>
+    <!-- 文本pressed颜色 -->
+    <color name="font_pressed_color">#6a6a6a</color>
+    <!-- 不可用颜色 -->
+    <color name="disable_color">#ff959595</color>
+    <!-- 主背景色 -->
+    <color name="main_background">#eeeeee</color>
+    <!-- 次背景色 -->
+    <color name="sub_background">#ff888888</color>
+
+    <color name="transparent">#00000000</color>
+    <!-- drawable -->
+    <drawable name="transparent">@color/transparent</drawable>
+    <drawable name="half_transparent">#d9d9d9</drawable>
+    <drawable name="light_grey">#f5f5f5</drawable>
+    <drawable name="divider">@color/divider_color</drawable>
+
+
+    <!-- 蓝色 -->
+    <color name="blue">#20a6fb</color>
+    <color name="blue_pressed">#1b8dd6</color>
+
+    <!-- 主色 -->
+    <color name="main_color">#ffc500</color>
+    <!-- 辅色 -->
+    <color name="sub_color1">#FFC501</color>
+    <color name="sub_color2">#F8BC64</color>
+    <color name="sub_color3">#17112B</color>
+    <color name="sub_color4">#9390A5</color>
+    <color name="sub_color5">#FE501B</color>
+    <color name="sub_color6">#D3D2DA</color>
+
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+</resources>

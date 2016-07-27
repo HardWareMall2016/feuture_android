@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/company_message_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="发件人："
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/send_message_detail_receiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/company_message_people"
+                android:layout_toRightOf="@id/company_message_people"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/sub_color1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/company_message_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="主题："
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_send_message_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/company_message_title"
+                android:layout_toRightOf="@id/company_message_title"
+                android:background="@drawable/bg_white_rounded_with_border_selector"
+                android:hint="请输入主题"
+                android:minHeight="40dp"
+                android:paddingLeft="8dp"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_send_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent"
+            android:gravity="top|start"
+            android:hint="请输入信息内容"
+            android:minHeight="40dp"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

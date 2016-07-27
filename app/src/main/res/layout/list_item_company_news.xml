@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_white_underline_selector"
+              android:orientation="vertical"
+              android:paddingBottom="2dp"
+              android:paddingLeft="4dp"
+              android:paddingRight="4dp"
+              android:paddingTop="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="人事部-王语嫣"
+            android:textColor="@color/sub_color5"
+            android:textSize="@dimen/text_size_large"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="2015-10-29 12:10"
+            android:textColor="@color/text_color_content"
+            android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/name"
+            android:layout_marginTop="4dp"
+            android:text="主题:欢迎公司新成员"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large"/>
+
+        <TextView
+            android:id="@+id/new_content_with_ellipsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/subject"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_color_content"
+            android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+            android:id="@+id/new_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/subject"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_color_content"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone"/>
+
+        <com.zhan.ironfuture.ui.widget.RedDotView
+            android:id="@+id/view_has_read"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <!--<TextView
+        android:id="@+id/btn_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/default_bg"
+        android:text="@string/company_news_unfold"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_normal" />-->
+</LinearLayout>

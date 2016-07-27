@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:background="@drawable/bg_color4_dash_rounded_white_content">
+
+    <com.zhan.framework.ui.widget.CircleImageView
+        android:id="@+id/icon"
+        xmlns:circle_image="http://schemas.android.com/apk/res-auto"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/icon_p1"
+        circle_image:border_width="0dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_small"/>
+
+    <TextView
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_small"/>
+
+</RelativeLayout>

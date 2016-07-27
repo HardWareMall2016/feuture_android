@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white_underline_selector"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/list_item_route_manage_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/route_manage_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="#1"
+                    android:textColor="@color/text_color_title"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/route_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:text="线路"
+                    android:textColor="@color/text_color_content"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/route_manage_begin_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="12344"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/route_manage_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="center"
+            android:text="5站"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+</LinearLayout>

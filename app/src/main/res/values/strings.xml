@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">铁未来</string>
+
+    <!-- base-->
+    <string name="json_syntax_error">数据格式错误</string>
+    <string name="utils_token_timeout">token无效或者已过期，请重新登录!</string>
+    <string name="cancel">取消</string>
+    <string name="finish">完成</string>
+    <string name="confirm">确定</string>
+    <!-- 登录注册-->
+    <string name="get_sms_code">获取验证码</string>
+    <string name="re_get_time_left">%d秒后重试</string>
+
+    <string name="first_raw_material">一级原料</string>
+    <string name="second_raw_material">二级原料</string>
+    <string name="thirdly_raw_material">三级原料</string>
+    <string name="fourthly_raw_material">四级原料</string>
+
+    <!-- 仓库管理-->
+    <string name="store_management">仓库管理</string>
+    <string name="store_in_out_record">仓储记录</string>
+
+    <!-- 市场采购-->
+    <string name="marketing_purchase">市场采购</string>
+
+    <!-- 商品销售-->
+    <string name="merchandise_sales">商品销售</string>
+
+    <!-- 物流订单-->
+    <string name="logistics_order">物流订单</string>
+
+    <!--订单详情-->
+    <string name="logistics_order_detail">订单详情</string>
+
+    <!-- 货车详情-->
+    <string name="truck_details">货车详情</string>
+
+    <!-- 废料精炼-->
+    <string name="waste_refining">废料精炼</string>
+
+    <!-- 配方研发-->
+    <string name="formulation_development">配方研发</string>
+
+    <!-- 系统消息-->
+    <string name="system_message">系统消息</string>
+    <string name="system_message_system_notice">系统公告</string>
+    <string name="system_message_reminder">提示信息</string>
+    <string name="system_message_operation_log">操作日志</string>
+
+    <!-- 生产产线-->
+    <string name="product_line">生产产线</string>
+
+
+    <!-- 生产贡献-->
+    <string name="manufacture_contribution">生产贡献</string>
+
+    <!--求职市场-->
+    <string name="job_market">求职市场</string>
+
+    <!-- 财务管理-->
+    <string name="financial_management">财务管理</string>
+
+    <!-- 部门管理-->
+    <string name="department_management">部门管理</string>
+
+    <!-- 订单中心-->
+    <string name="orders_center">订单中心</string>
+
+
+    <!-- 路线管理-->
+    <string name="route_management">路线管理</string>
+
+    <!-- 路线建设-->
+    <string name="route_construction">路线建设</string>
+
+    <!-- 人才市场-->
+    <string name="talent_market">人才市场</string>
+    <string name="talent_market_school">学校</string>
+    <string name="talent_market_expect_salary">期望薪资</string>
+    <string name="talent_market_last_position_held">最后职位</string>
+
+    <!--人员管理-->
+    <string name="staff_manager">人员管理</string>
+
+    <!-- 公司消息-->
+    <string name="company_news">公司消息</string>
+    <string name="company_news_unfold">点击展开</string>
+    <string name="company_news_fold">点击收起</string>
+
+    <!-- 设置-->
+    <string name="settings">设置</string>
+    <string name="settings_quit">退出登录</string>
+    <string name="settings_remind_message">消息提醒</string>
+    <string name="settings_clear_cache">清除缓存</string>
+    <string name="settings_about_us">关于我们</string>
+
+    <!-- 错误-->
+    <string name="error">错误</string>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/total_assets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btn_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="16dp"
+            android:minHeight="32dp"
+            android:background="@drawable/bg_white_empty_half_circle_selector"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:text="转账"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pull_refresh_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="0dip"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="?attr/selectableItemBackground"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+
+    <include
+        android:id="@id/layoutLoading"
+        layout="@layout/comm_lay_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@id/layoutLoadFailed"
+        layout="@layout/comm_lay_loadfailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@id/layoutEmpty"
+        layout="@layout/comm_lay_emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

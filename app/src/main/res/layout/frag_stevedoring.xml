@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:TipView="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_color"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/stevedoring_detail_executePower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="当前可用行动力"
+            android:textColor="#FFE5D0"
+            android:textSize="@dimen/text_size_normal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:background="@drawable/bg_white_small">
+
+        <LinearLayout
+            android:id="@+id/amount_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/default_bg"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/arrow_down_small"
+                android:gravity="center"
+                android:text="金额"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emergency_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/emergency"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/arrow_down_small"
+                android:gravity="center"
+                android:text="紧急"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ccan_unloading_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/can_unloading"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/arrow_down_small"
+                android:gravity="center"
+                android:text="可卸货"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filter"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/loading_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clipToPadding="false"
+                android:horizontalSpacing="16dp"
+                android:numColumns="4"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/flag_center"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+                <com.zhan.ironfuture.ui.widget.TipView
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    TipView:name="@string/first_raw_material"
+                    TipView:tipDrawable="@drawable/bg_color4_circle"/>
+
+                <com.zhan.ironfuture.ui.widget.TipView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/flag_center"
+                    TipView:name="@string/second_raw_material"
+                    TipView:tipDrawable="@drawable/bg_color4_circle"
+                    TipView:tipDrawableSize="10dp"/>
+
+                <com.zhan.ironfuture.ui.widget.TipView
+                    android:id="@+id/thirdly_raw_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/first"
+                    android:layout_marginTop="4dp"
+                    TipView:name="@string/thirdly_raw_material"
+                    TipView:tipDrawable="@drawable/bg_color4_circle"/>
+
+                <com.zhan.ironfuture.ui.widget.TipView
+                    android:id="@+id/fourthly_raw_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/thirdly_raw_material"
+                    android:layout_toRightOf="@id/flag_center"
+                    TipView:name="@string/fourthly_raw_material"
+                    TipView:tipDrawable="@drawable/bg_color4_circle"
+                    TipView:tipDrawableSize="10dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/unloading_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/unloading_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:dividerHeight="0dip"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="?attr/selectableItemBackground"
+                android:smoothScrollbar="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <include
+        android:id="@id/layoutLoading"
+        layout="@layout/comm_lay_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@id/layoutLoadFailed"
+        layout="@layout/comm_lay_loadfailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@id/layoutEmpty"
+        layout="@layout/comm_lay_emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/filter_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filter"
+        android:background="#70000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/filter_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dip"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="?attr/selectableItemBackground"
+            android:smoothScrollbar="true"/>
+    </LinearLayout>
+
+</RelativeLayout>

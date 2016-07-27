@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_underline_selector"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/truck_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="一号车"
+        android:textColor="@color/text_color_supplementary"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/worker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/truck_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="装卸工"
+        android:textColor="@color/text_color_supplementary"
+        android:textSize="@dimen/text_size_normal" />
+
+
+    <TextView
+        android:id="@+id/local_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/worker"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="当前位置"
+        android:textColor="@color/text_color_supplementary"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/loading_amount_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/local_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="当前装货量/上限"
+        android:textColor="@color/text_color_supplementary"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/loading_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/loading_amount_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:text="0/200"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_normal" />
+
+
+    <TextView
+        android:id="@+id/worker_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/worker"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:text="5人"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_normal" />
+
+
+    <TextView
+        android:id="@+id/scheduled_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/local_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:text="S公司"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/fuel_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/loading_amount"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="50%"
+        android:textColor="@color/text_color_title"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fuel_percentage"
+        android:layout_toLeftOf="@id/fuel_percentage"
+        android:text="燃料:"
+        android:textColor="@color/text_color_content"
+        android:textSize="@dimen/text_size_normal" />
+
+</RelativeLayout>

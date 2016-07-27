@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.handmark.pulltorefresh.library.PullToRefreshGridView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                ptr:ptrMode="pullFromStart"
+                android:id="@+id/store_manage_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:horizontalSpacing="16dp"
+                android:numColumns="4"
+                android:paddingBottom="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="16dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="16dp"/>
+        </RelativeLayout>
+
+    <include
+        android:id="@id/layoutLoading"
+        layout="@layout/comm_lay_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@id/layoutLoadFailed"
+        layout="@layout/comm_lay_loadfailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@id/layoutEmpty"
+        layout="@layout/comm_lay_emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</RelativeLayout>

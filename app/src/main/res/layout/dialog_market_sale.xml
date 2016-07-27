@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_white_rounded"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="交易确认"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/owner_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/title"
+            android:text="你确认购买 xxx物品吗？"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+        <LinearLayout
+            android:id="@+id/ll_tishi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@+id/owner_title"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:id="@+id/market_purchase_count_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/main_color"
+                    android:text="1"
+                    />
+            </RelativeLayout>
+            <SeekBar
+                android:id="@+id/market_purchase__seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/text_color_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/market_purchase__count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/text_color_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:attr/listDivider"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/default_bg"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="不用了"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/loading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/default_bg"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="我要销售"
+            android:textColor="@color/sub_color1"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+
+</LinearLayout>

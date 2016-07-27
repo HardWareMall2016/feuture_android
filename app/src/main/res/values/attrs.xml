@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <attr name="arc_origin">
+    <!-- Value same as the android:gravity -->
+    <flag name="top" value="0x30"/>
+    <flag name="bottom" value="0x50"/>
+    <flag name="left" value="0x03"/>
+    <flag name="right" value="0x05"/>
+    <flag name="center_vertical" value="0x10"/>
+    <flag name="center_horizontal" value="0x01"/>
+    <flag name="center" value="0x11"/>
+    <flag name="start" value="0x00800003"/>
+    <flag name="end" value="0x00800005"/>
+  </attr>
+
+  <declare-styleable name="arc_ArcLayout">
+    <attr name="arc_origin"/>
+    <attr name="arc_color" format="color"/>
+    <attr name="arc_radius" format="dimension"/>
+    <attr name="arc_axisRadius" format="dimension"/>
+    <attr name="arc_freeAngle" format="boolean"/>
+    <attr name="arc_reverseAngle" format="boolean"/>
+  </declare-styleable>
+
+  <declare-styleable name="arc_ArcLayout_Layout">
+    <attr name="arc_origin"/>
+    <attr name="arc_angle" format="float"/>
+  </declare-styleable>
+
+  <declare-styleable name="FlowLayout">
+    <attr name="horizontalSpacing" format="dimension"/>
+    <attr name="verticalSpacing" format="dimension"/>
+    <attr name="orientation" format="enum">
+      <enum name="horizontal" value="0"/>
+      <enum name="vertical" value="1"/>
+    </attr>
+    <attr name="debugDraw" format="boolean" />
+  </declare-styleable>
+  <declare-styleable name="FlowLayout_LayoutParams">
+    <attr name="layout_newLine" format="boolean"/>
+    <attr name="layout_horizontalSpacing" format="dimension"/>
+    <attr name="layout_verticalSpacing" format="dimension"/>
+  </declare-styleable>
+
+  <declare-styleable name="TipView_LayoutParams">
+    <attr name="tipDrawable" format="reference" />
+    <attr name="tipDrawableSize" format="dimension" />
+    <attr name="name" format="reference" />
+  </declare-styleable>
+
+
+  <declare-styleable name="RoundProgressBar">
+    <attr name="progress_current" format="integer"/>
+    <attr name="progress_max" format="integer"/>
+    <attr name="progress_round_width" format="dimension"/>
+    <attr name="progress_unreached_color" format="color"/>
+    <attr name="progress_reached_color" format="color"/>
+    <attr name="progress_reached_bar_height" format="dimension"/>
+    <attr name="progress_unreached_bar_height" format="dimension"/>
+    <attr name="progress_text_offset" format="dimension"/>
+    <attr name="progress_text_size" format="dimension"/>
+    <attr name="progress_text_color" format="color"/>
+    <attr name="progress_text_visibility" format="enum">
+      <enum name="visible" value="0"/>
+      <enum name="invisible" value="1"/>
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="Themes">
+    <attr name="roundProgressBarStyle" format="reference" />
+  </declare-styleable>
+
+  <declare-styleable name="wheelview">
+    <attr name="gravity">
+      <enum name="center" value="17"/>
+      <enum name="left" value="3"/>
+      <enum name="right" value="5"/>
+    </attr>
+    <attr name="textSize" format="dimension"/>
+    <attr name="textColorOut" format="color"/>
+    <attr name="textColorCenter" format="color"/>
+    <attr name="dividerColor" format="color"/>
+  </declare-styleable>
+
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:circle_image="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_selector"
+        android:minHeight="48dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp">
+
+        <com.zhan.framework.ui.widget.CircleImageView
+            android:id="@+id/user_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher"
+            circle_image:border_width="0dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/user_img"
+            android:text="乔峰"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large" />
+        <TextView
+            android:id="@+id/department_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_yellow_half_circle"
+            android:textColor="@color/white"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/user_img"
+            android:text="个人说明,个人说明,个人说明~"
+            android:textColor="@color/text_color_content"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/intro"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/user_img"
+            android:background="@drawable/divider" />
+    </RelativeLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/ext_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/budget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/default_bg"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="部门预算"
+            android:textColor="@color/sub_color1"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="20dp"
+            android:background="@color/sub_color4" />
+
+        <TextView
+            android:id="@+id/invite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/default_bg"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="邀请"
+            android:textColor="#4E73CE"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>-->
+
+</LinearLayout>

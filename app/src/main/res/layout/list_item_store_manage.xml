@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <com.zhan.ironfuture.ui.widget.SquareLayout
+        android:id="@+id/item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_color4_rounded_white_content_selector"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/goods_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_product"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_content"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_color_content"
+            android:textSize="@dimen/text_size_small"/>
+
+    </com.zhan.ironfuture.ui.widget.SquareLayout>
+
+    <ImageView
+        android:id="@+id/icon_remove"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/default_bg"
+        android:scaleType="center"
+        android:src="@drawable/icon_remove"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_lock" />
+</RelativeLayout>
+

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/company_message_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发件人："
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/message_detail_receiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/company_message_people"
+                android:textColor="@color/sub_color1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_underline_selector"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/company_message_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主题："
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/message_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/company_message_title"
+                android:layout_toEndOf="@id/company_message_title"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/message_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"/>
+
+                <com.zhan.ironfuture.ui.widget.MyListView
+                    android:id="@+id/message_detail_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="48dp"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/search_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp">
+
+            <EditText
+                android:id="@+id/company_message_detail_reply_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bg_white_half_circle_selector"
+                android:gravity="start"
+                android:hint="回复:"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:textColor="@color/sub_color3"
+                android:textColorHint="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/company_message_detail_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/text_main_color_selector"
+                android:text="发送"
+                android:textSize="14dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

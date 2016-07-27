@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_store_purchase_order_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_underline_selector"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/purchase_order_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择物品"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/purchase_order_change_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@+id/purchase_order_change"
+            android:textColor="@color/text_color_main"
+            android:textSize="@dimen/text_size_normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_store_purchase_order_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_underline_selector"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/purchase_order_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指定公司"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/purchase_order_change_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@+id/purchase_order_company"
+            android:textColor="@color/text_color_main"
+            android:textSize="@dimen/text_size_normal"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_store_purchase_order_product"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_underline_selector"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/purchase_order_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="商品"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+        <EditText
+            android:id="@+id/et_purchase_order_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_weight="4"
+            android:background="@null"
+            android:hint="请输入采购商品件数"
+            android:inputType="number"
+            android:textColor="@color/sub_color1"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/et_purchase_order_product"
+            android:layout_weight="1"
+            android:text="件"
+            android:textColor="@color/text_color_main"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_underline_selector"
+        android:minHeight="@dimen/min_item_height"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/purchase_order_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="订单金额"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+        <EditText
+            android:id="@+id/et_purchase_order_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/purchase_order_money"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="请输入订单金额"
+            android:inputType="number"
+            android:textColor="@color/sub_color1"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+    <!--<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/bg_white_underline_selector">
+        <TextView
+            android:id="@+id/purchase_order_contract_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="违约金"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/text_color_title"/>
+        <EditText
+            android:id="@+id/et_purchase_order_contract_money"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/purchase_order_contract_money"
+            android:layout_marginLeft="46dp"/>
+    </RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/rl_purchase_order_out_data"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_underline_selector"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/purchase_order_out_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="逾期时间"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_purchase_order_out_data"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@+id/purchase_order_out_data"
+            android:text="请选择逾期时间"
+            android:textColor="#999999"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+</LinearLayout>

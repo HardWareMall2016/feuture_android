@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Framework</string>
+    <string name="network_timeout">请求超时，请重试!</string>
+    <string name="network_disconnect">没有可用网络!</string>
+    <string name="request_canceled">取消请求!</string>
+    <string name="go_back">返回</string>
+    <string name="no_internet">无网络连接~！</string>
+    <string name="generic_server_down">连接服务器失败~</string>
+    <string name="url_not_exists">请求的地址不存在~</string>
+    <string name="service_unavailable">服务暂不可用,请稍后再试~</string>
+    <string name="generic_error">服务器未知错误,请稍后再试~</string>
+</resources>
