@@ -92,7 +92,7 @@ public class RegisterNextFragment extends ABaseFragment{
                 RegisterNextRequestBean.DataEntity data = new RegisterNextRequestBean.DataEntity();
                 data.setPhone(registerContent.getPhoneNum());
                 data.setInviteCode(registerContent.getCodeNum());
-                data.setPhoneChkNo(phoneChkNum);
+                data.setPhoneChkNo(messageCode);
                 request2.setData(data);
                 startJsonRequest(ApiUrls.REGISTER, request2, new HttpRequestHandler(this) {
                     @Override
@@ -184,8 +184,7 @@ public class RegisterNextFragment extends ABaseFragment{
                     case success:
                         MessageCodeResponseBean responseBean= Tools.parseJsonTostError(result, MessageCodeResponseBean.class);
                         if(responseBean!=null){
-                            phoneChkNum = responseBean.getMessage();
-                            //mNextCode.setText(phoneChkNum);
+                            phoneChkNum = mNextCode.getText().toString();
                         }
                         break;
                     default:
